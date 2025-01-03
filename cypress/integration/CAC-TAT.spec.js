@@ -221,7 +221,7 @@
                     })
             })
 
-            it('seleciona um arquivo simulando um drag-and-drop', function(){
+            it('seleciona um arquivo simulando um drag-and-drop na tela', function(){
                 cy.get('#file-upload')
                 .should('not.have.value')
                 .selectFile('./cypress/fixtures/example.json', { action: 'drag-drop' })
